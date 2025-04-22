@@ -11,8 +11,8 @@ import java.util.List;
 public class StudentController {
 
     @GetMapping("/student")
-    public String getStudent(){
-        return "Himani Raj";
+    public Student getStudent(){
+        return new Student(1, "Himani", "Raj");
     }
     @GetMapping("/students")
     public List<Student> getStudents(){
